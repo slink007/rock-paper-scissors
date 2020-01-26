@@ -1,34 +1,43 @@
 # Assignment from Section 9 of Modern Python 3 Bootcamp
-# A basic rock, paper, scissors game
-# How basic is it?  We ignore the fact that when Player 1 enters a choice
-#    Player 2 can see that and totally cheat.
+# A a less basic rock, paper, scissors game
+# In this version we will only have one player competing against the
+# computer.
 #
 # paper > rock
 # scissors > paper
 # rock > scissors
 
+import random
+
 print("\n...rock...")
 print("...paper...")
 print("...scissors...")
 
-play1 = input("enter Player 1's choice: ")
-play2 = input("enter Player 2's choice: ")
+player = input("enter your choice: ")
+player = player.lower()
+cpu = random.randint(0, 2)
+# we haven't covered dictionaries yet so doing this with if-else
+if cpu == 0:
+    cpu_choice = "rock"
+elif cpu == 1:
+    cpu_choice = "paper"
+else:
+    cpu_choice = "scissors"
+
+print("CPU chose: " + cpu_choice)
 print("SHOOT!")
 
-if play1 != "rock" and play1 != "paper" and play1 !="scissors":
-    print("Player 1 gave invalid input")
-    exit()
-if play2 != "rock" and play2 != "paper" and play2 !="scissors":
-    print("Player 2 gave invalid input")
+if player != "rock" and player != "paper" and player !="scissors":
+    print("Player gave invalid input")
     exit()
         
-if play1 == play2:
+if player == cpu_choice:
     print("TIE")
-elif play1 == "rock" and play2 == "scissors":
+elif player == "rock" and cpu_choice == "scissors":
     print("Player 1 wins")
-elif play1 == "paper" and play2 == "rock":
+elif player == "paper" and cpu_choice == "rock":
     print("Player 1 wins")
-elif play1 == "scissors" and play2 == "paper":
+elif player == "scissors" and cpu_choice == "paper":
     print("Player 1 wins")
 else:
-    print("Player 2 wins")
+    print("CPU wins")
