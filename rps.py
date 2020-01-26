@@ -7,3 +7,10 @@
 # scissors > paper
 # rock > scissors
 
+print("...rock...")
+print("...paper...")
+print("...scissors...")
+
+play1 = input("enter Player 1's choice: ")
+play2 = input("enter Player 2's choice: ")
+print("SHOOT!")
