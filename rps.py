@@ -7,7 +7,7 @@
 # scissors > paper
 # rock > scissors
 
-print("...rock...")
+print("\n...rock...")
 print("...paper...")
 print("...scissors...")
 
@@ -31,7 +31,7 @@ if play1 == "rock":
     elif play2 == "scissors":
         print("Player 1 wins")
     else:
-        print("It's called 'rock, paper, scissors' not  '" + play1 + \
+        print("It's called 'rock, paper, scissors' not '" + play2 + \
         ", paper, scissors'")
 elif play1 == "paper":
     if play2 == "rock":
@@ -41,7 +41,7 @@ elif play1 == "paper":
     elif play2 == "scissors":
         print("Player 2 wins")
     else:
-        print("It's called 'rock, paper, scissors' not  '" + play1 + \
+        print("It's called 'rock, paper, scissors' not '" + play2 + \
         ", paper, scissors'")
 elif play1 == "scissors":
     if play2 == "rock":
@@ -51,7 +51,7 @@ elif play1 == "scissors":
     elif play2 == "scissors":
         print("TIE")
     else:
-        print("It's called 'rock, paper, scissors' not  '" + play1 + \
+        print("It's called 'rock, paper, scissors' not '" + play2 + \
         ", paper, scissors'")
 else:
     print("It's called 'rock, paper, scissors' not  '" + play1 + \
