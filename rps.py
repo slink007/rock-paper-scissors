@@ -19,8 +19,8 @@ print("...scissors...")
 
 while (player_wins < number_wins) and (cpu_wins < number_wins):
     # get the player choices
-    player = input("Enter 'q' or 'quit' to stop.\nOtherwise enter 'rock', "\
-    "or 'paper' or 'scissors' to play. ")
+    player = input("Enter 'q' or 'quit' to stop.\nOtherwise enter 'rock', "
+                   "or 'paper' or 'scissors' to play. ")
     player = player.lower()
 
     # does player want to quit?
@@ -39,7 +39,7 @@ while (player_wins < number_wins) and (cpu_wins < number_wins):
     print("CPU chose: " + cpu_choice)
     print("SHOOT!")
 
-    if player != "rock" and player != "paper" and player !="scissors":
+    if player != "rock" and player != "paper" and player != "scissors":
         print("Player gave invalid input")
     elif player == cpu_choice:
         print(f"You both chose {player}. Tie!")
